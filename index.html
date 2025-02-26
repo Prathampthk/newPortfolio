@@ -37,18 +37,17 @@
       .firstSection {
         display: flex;
         justify-content: space-around;
-        margin: 23px 0;
-        
+        margin: 80px 0;
+        align-items: center;
       }
 
-      .firstSection > div{
+      .firstSection > div {
         width: 30%;
       }
 
       .leftSection {
         font-size: 3rem;
-        margin: 30px;
-       
+        margin: 70px 0;
       }
 
       .rightSection img {
@@ -64,6 +63,21 @@
         list-style: none;
         margin: 0 23px;
       }
+
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover{
+        color: lavender;
+        font-size: 1.01rem;
+      }
+
+      .purple{
+        color: purple;
+      }
+
     </style>
   </head>
   <body>
@@ -72,11 +86,11 @@
         <div class="left">Pratham's Portfolio</div>
         <div class="right">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
           </ul>
         </div>
       </nav>
@@ -84,11 +98,15 @@
 
     <main>
       <section class="firstSection">
-        <div class="leftSection">Hi, My name is Pratham. I am a Student.</div>
-        <div class="rightSection">
-          <img src="bg.webp" alt="">
-        </div>
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Pratham.</span>
         
+        <div>I am a</div>
+        <div>Student</div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.webp" alt="" />
+        </div>
       </section>
     </main>
   </body>
